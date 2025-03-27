@@ -528,12 +528,17 @@ label {
     }
 
     #contactform input, #contactform textarea {
-        width: 90%;
+        width: 100%;
     }
     
     #contactform textarea {
         height: 200px; 
     }
+
+    label {
+        font-size: 16px;
+    }
+    
     
     /* -------------------------------------- ADVISING PAGE --------------------------------------*/
     .advising h3 {
