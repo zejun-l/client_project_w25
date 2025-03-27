@@ -174,6 +174,7 @@ article p {
 }
 
 footer {
+    font-size: 10px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -611,15 +612,22 @@ label {
 /* -------------------------------------- 404 PAGE --------------------------------------*/
 #errorpage {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 75vh; 
-    margin: 0;
-    font-family: Arial, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Makes sure the page takes up the full viewport height */
     text-align: center;
     padding: 50px;
     background-color: white;
 }
+
+#errorpage main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #errorpage h1 {
     font-size: 100px;
@@ -633,7 +641,7 @@ label {
     margin: 20px;
 }
 
-#errorpage a {
+#homebutton {
     display: inline-block;
     margin-top: 20px;
     padding: 15px;
@@ -644,8 +652,10 @@ label {
     border-radius: 5px;
 }
 
-#errorpage a:hover {
+#homebutton:hover {
     background-color: #75988d;
 }
 
-
+#errorpage footer p {
+    font-size: 20px; /* Adjust to the desired size */
+}
