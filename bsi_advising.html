@@ -70,8 +70,12 @@
 
     </main>
     <footer>
-        <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home?pli=1&authuser=1">UMSI Academic Advising </a></p>
+        <p>© <span id="year"></span> UMSI  | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home?pli=1&authuser=1">Academic Advising</a></p>
     </footer>
+    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 </html>

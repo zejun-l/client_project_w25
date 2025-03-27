@@ -10,7 +10,7 @@
 <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <img src="images/UMSI_MichiganUnion_Reopening_18.jpg" alt="Michigan Union sign and building">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href = "index.html" >Home</a></li>
@@ -20,9 +20,10 @@
             </ul>
         </nav>
         <h1>Student Mental Health Resources</h1>
-
     </header>
+   
     <main id = "main">
+        <img src="images/UMSI_MichiganUnion_Reopening_18.jpg" alt="Michigan Union sign and building" class="photos">
         <div class="CAPS">
             <p>University Health & Counseling (UHC) supports the health and well-being of the campus community. We are inspired to help students realize their potential, cope with the stresses of life, work productively, and connect meaningfully with others. UHC is made up of Counseling and Psychological Services (CAPS), which offers counseling services, and University Health Service (UHS), which offers medical services. This website is about CAPS. For information about UHS, please visit the <a href = "https://uhs.umich.edu/">UHS website.</a></p>
             <p>CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary and multi-theoretical practices that allow our diverse student body to access care, receive high quality services and take positive pathways to mental health. We are happy to offer both in-person and virtual services. 
@@ -58,9 +59,14 @@
         <!-- Content taken & modified from various parts of the UM CAPS website: https://caps.umich.edu/ (2024). --> 
 
     </main>
+    
     <footer>
-        <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home?pli=1&authuser=1">UMSI Academic Advising </a></p>
+        <p>© <span id="year"></span> UMSI  | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home?pli=1&authuser=1">Academic Advising</a></p>
     </footer>
+    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 

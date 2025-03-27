@@ -8,6 +8,10 @@
     <title>Student Success Portal</title>
 </head>
 <body>
+    <form
+        action="https://formspree.io/f/mdkedrzv"
+        method="POST"
+    >
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
@@ -42,7 +46,7 @@
             <article>
                 <h3>University Health Service (UHS)</h3>
                 <figure>
-                    <img src="images/UHS.jpg" alt="University Health Services building">
+                    <img src="images/UHS.jpg" alt="University Health Services building" class="photos">
                     <figcaption>University Health Services Building</figcaption>
                 </figure>
                 <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
@@ -50,7 +54,7 @@
             <article>
                 <h3>Recreational Sports</h3>
                 <figure>
-                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag." class="photos">
                     <figcaption>UMSI out in the fall!</figcaption>
                 </figure>
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
@@ -59,7 +63,7 @@
 
         <div class="studentinfo">
             <h2>Mental Health</h2>
-            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
+            <p>Maintaining your mental well-being is crucial for thriving in school. Here are resources to support your mental health:</p>
             <div>
                 <h3>Counseling and Psychological Services (CAPS):</h3>
                 <p>Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
@@ -105,12 +109,31 @@
     
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
-        
     </main>
 
-    <footer>
-        <p>BSI Academic Advising | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home?pli=1&authuser=1">UMSI Academic Advising</a></p>
-    </footer>
+    <div id="contactform">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" class="feedback-input" placeholder="Enter your name" required />   
+    
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" class="feedback-input" placeholder="Enter your email" required />
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="feedback-input" placeholder="Write your message here" required></textarea>
+    
+            <input type="submit" value="SUBMIT"/>
+        </form>
+    </div>
 
+
+    <footer>
+        <p>© <span id="year"></span> UMSI  | <a href="https://sites.google.com/umich.edu/bsiacademicadvising/home?pli=1&authuser=1">Academic Advising</a></p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
