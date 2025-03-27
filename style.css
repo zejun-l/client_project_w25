@@ -1,0 +1,651 @@
+/* -------------------------------------- DEFAULT MOBILE VIEW --------------------------------------*/
+nav a:hover, nav a:focus{
+    background-color: #75988d;
+    color: white;
+}
+
+nav a.active {
+    background-color: #9A3324; 
+    color: white;
+    font-weight: bold;
+}
+
+.skip a {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    background-color: white;
+    color: #00274C;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip a:focus { 
+    top: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    text-align: center;
+}
+
+nav li {
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #FFCB05;
+}
+
+nav a {
+    display: flex;
+    flex: 1; 
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 35%; 
+    padding: 15px;
+    background-color: white; 
+    color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #00274C;
+    border-radius: 0; 
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    background-color: #00274C;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* -------------------------------------- MAIN PAGE --------------------------------------*/
+main div {
+    padding: 10px;
+    margin: 20px; 
+}
+
+main h2 {
+    color: #00274C;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main h3 {
+    line-height: 1.5;
+}
+
+main p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main ol {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+main ol li {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    margin: 5px auto;
+    display: inline-block;
+    width: 90%;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+main article {
+    background-color: white;
+    padding: 15px;
+    margin: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0;
+}
+
+figcaption {
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-top: 5px; 
+}
+
+article p {
+    font-size: 14px;
+    line-height: 1.5; 
+    text-align: center; 
+    margin-top: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.studentinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.studentinfo div {
+    background-color: #00274C;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0; 
+}
+
+.studentinfo h2, .studentinfo p {
+    grid-column: 1/-1;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------- CONTACT FORM -------------------------------------- */
+#contactform h2 {
+    text-align: center;
+    color: #FFCB05; 
+    font-size: 18px;
+    margin: 10px;
+}
+
+#contactform {
+    background-color: #00274C;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contactform input, #contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #00274C;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#contactform textarea {
+    height: 150px; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #75988d;
+    color: white;
+}
+
+label {
+    color: white;
+    padding: 5px;  
+}
+
+
+/* -------------------------------------- ADVISING PAGE --------------------------------------*/
+.advising h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.advising p {
+    margin: 10px;
+}
+
+.appointments {
+    display: inline-block;  
+    padding: 10px 20px;     
+    background-color: #00274C;  
+    color: white;        
+    text-decoration: none;
+    border-radius: 5px;   
+    margin: 20px auto;
+}
+
+.appointments:hover {
+    background-color: #75988d; 
+    transform: scale(1.05); 
+}
+
+/* -------------------------------------- TUTORING PAGE --------------------------------------*/
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0px;
+}
+
+.courses p {
+    background-color: #00274C;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0; 
+}
+
+.ptutoring h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #00274C;
+    background-color: #FFCB05;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ptutoring ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 10px; 
+}
+
+.ptutoring li {
+    padding: 10px;
+    border-radius: 10px; 
+    font-weight: bold;
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.ptutoring li a {
+    color: #00274C; 
+    text-decoration: none; 
+}
+
+.ptutoring a:hover {
+    color: #75988d; 
+}
+
+/* -------------------------------------- MENTAL HEALTH PAGE --------------------------------------*/
+.CAPS  {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.CAPS p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.CAPS h2, .CAPS h3 {
+    color: #00274C;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.CAPS ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.CAPS ul li {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.support {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.support h2 {
+    font-size: 24px;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.support h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.support p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.support ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.support ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;    
+    list-style-type: disc;
+}
+
+.support a {
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    background-color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px; 
+    text-align: center;
+}
+
+.support a:hover {
+    background-color: #75988d;
+}
+
+
+/* -------------------------------------- DESKTOP VIEW --------------------------------------*/
+@media screen and (min-width: 1024px) {
+    img {
+        display: block;
+        width: 10%;  
+        margin-bottom: 20px; 
+        display: block;
+    }
+
+    .photos {
+        display: block;
+        width: 40%;
+        border: solid 4px black; 
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+
+    header {
+        background-color: #00274C;
+        padding: 10px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+    /* -------------------------------------- MAIN PAGE --------------------------------------*/
+    main {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    main, body p {
+        font-size: 20px;
+    }
+
+    main h2 {
+        color: #00274C;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    main h3 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    main ol li {
+        padding: 12px;
+        margin-top: 10px;
+        width: 80%;
+    
+    }
+
+    .content-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    article {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    article h3 {
+        text-align: center;
+    }
+
+    .studentinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        gap: 20px;
+        
+    }
+
+    .studentinfo div {
+        background-color: #00274C;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* -------------------------------------- CONTACT FORM --------------------------------------*/
+    #contactform h2 {
+        font-size: 20px;
+    }
+    
+    #contactform {
+        width: 40%; 
+        margin: 30px auto; 
+        padding: 20px;
+    }
+
+    #contactform input, #contactform textarea {
+        width: 90%;
+    }
+    
+    #contactform textarea {
+        height: 200px; 
+    }
+    
+    /* -------------------------------------- ADVISING PAGE --------------------------------------*/
+    .advising h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .advising p {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .appointments {
+        padding: 10px 20px;     
+        margin: 20px auto;
+        font-size: 16px;
+        
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+    
+    /* -------------------------------------- TUTORING PAGE --------------------------------------*/
+    .ptutoring h3 {
+        font-size: 20px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .courses p {
+        padding: 25px;
+    }
+
+    /* -------------------------------------- MENTAL HEALTH PAGE --------------------------------------*/
+    .CAPS p, .CAPS h2, .CAPS h3 {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .CAPS ul li {
+        margin: 2px 15px 10px 10px;
+        padding: 12px;
+        width: 90%;
+    }
+
+    .support p {
+        font-size: 20px;
+        width: 90%;
+    }
+    
+    .support ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .support ul li {
+        font-size: 20px;
+        list-style-type: disc;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .support a {
+        font-size: 16px;
+        padding: 10px 20px;     
+ 
+    }
+}
+
+/* -------------------------------------- 404 PAGE --------------------------------------*/
+#errorpage {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 75vh; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+#errorpage h1 {
+    font-size: 100px;
+    color: #FFCB05;
+    background-color: white;
+}
+
+#errorpage p {
+    font-size: 40px;
+    color: black;
+    margin: 20px;
+}
+
+#errorpage a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #003366;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#errorpage a:hover {
+    background-color: #75988d;
+}
+
+
